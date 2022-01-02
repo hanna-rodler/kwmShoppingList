@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>KWM Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+<h1>KWM Shopping List</h1>
+<main>
+	<!-- Code from: https://codepen.io/trobes/pen/PXyOMz-->
+	<ul class="accordion">
+		<li>
+			<a class="toggle" href=#>Dresses</a>
+			<div class="inner">
+				<div class="article" id="dress">
+					<!--Fill Shop via js-->
+				</div>
+			</div>
+		</li>
+		<li>
+			<a class="toggle" href=#>Trousers</a>
+			<div class="inner">
+				<div class="article" id="trousers">
+					<!--Fill Shop via js-->
+				</div>
+			</div>
+		</li>
+		<li>
+			<a class="toggle" href=#>Tops</a>
+			<div class="inner">
+				<div class="article" id="top">
+					<!--Fill Shop via js-->
+				</div>
+			</div>
+			</div>
+		</li>
+		<li>
+			<a class="toggle" href=#>Shoes</a>
+			<div class="inner">
+				<div class="article" id="shoes">
+					<!--Fill Shop via js-->
+				</div>
+			</div>
+		</li>
+	</ul>
+	
+	<div>
+		<p class="cart">Cart</p>
+		<div id="cartContent"></div>
+		<div id="cartDesc">
+			<p>Total: <span id="total">0</span>€</p>
+			<input type="button" value="Order" class="hidden">
+		</div>
+	</div>
+</main>
+<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+<script type="text/javascript" src="JS/shoppingList.js"></script>
+</body>
+</html>

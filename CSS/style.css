@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* CODE FROM https://codepen.io/trobes/pen/PXyOMz*/
+* {
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+body {
+   width: 70%;
+   min-width: 300px;
+   max-width: 1000px;
+   margin: 1.5em auto;
+   color: #333;
+}
+
+h1 {
+   font-weight: 400;
+   font-size: 2.5em;
+   text-align: center;
+   margin-top: 5rem;
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+}
+
+ul .inner {
+   padding-left: 1em;
+   overflow: hidden;
+   display: none;
+}
+
+ul li {
+   margin: 0.5em 0;
+}
+
+ul li a.toggle {
+   width: 100%;
+   display: block;
+   /*background: rgba(0, 0, 0, 0.78);*/
+   background: rgb(21, 22, 20);
+   color: #fefefe;
+   padding: 0.75em;
+   border-radius: 0.15em;
+   transition: background 0.3s ease;
+}
+
+ul li a.toggle:hover, .cart:hover {
+   background: rgba(108, 109, 102, 1);
+}
+
+/*--*/
+h1 {
+   color: #565752;
+}
+
+div {
+   margin-block-start: 1.4em;
+   margin-block-end: 1em;
+}
+
+.cart {
+   width: 100%;
+   display: block;
+   background: rgba(205, 207, 191, 1);
+   color: #040404;
+   padding: 0.75em;
+   border-radius: 0.15em;
+   transition: background 0.3s ease;
+}
+
+.cart:hover {
+   /*background-color: rgb(194, 195, 184);*/
+   color: white;
+}
+
+.article, #cartContent {
+   margin: 0;
+   flex-basis: 100%;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+}
+
+.item p {
+   margin-top: 0.7em;
+   margin-bottom: 0.7em;
+}
+
+.item {
+   margin: 5px 5px 30px 5px;
+}
+
+.item img {
+   width: 200px;
+}
+
+.hidden {
+   display: none;
+}
+
+input[type="button"]:hover {
+   box-shadow: 2px 2px 2px 1px rgba(205, 207, 191, 0.8);
+}
